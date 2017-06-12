@@ -1,0 +1,44 @@
+<ion-view title="News Feed">
+    <ion-content scroll="false">
+
+     	<p class="title">Nemasi</p>
+
+    	<div class="row ">
+    		<div class="col">
+    			<button class="button button-block top-left-button" ng-click="recent_button()">Recent</button>
+    		</div>
+    		<div class="col">
+    			<button class="button button-block top-right-button" ng-click="popular_button()">Popular</button>
+    		</div>
+    		<!-- <div class="col">
+    			<button class="button button-block top-button" ng-click="alltime_button()">All Time</button>
+    		</div> -->
+    	</div>
+
+    	<ion-scroll direction="y" style="height: 83vh"> 
+	        <ion-list>            
+	            <ion-item class="item" ng-repeat="data in dataList" ng-click="clicker(data)">
+	            	<div class="image-container">
+		            	<div class="inner-image-container">
+		            		<img class="inner-image" ng-src="{{data.image}}"/>
+		            	</div>
+		            	<div class="inner-text-container">
+		            		<div class="inner-text">
+	            				<p style="color: black; font-size: 23px; margin-top: 5px; white-space: nowrap;">{{data.title}}</p>
+	            				<p style="color:black; font-size: 15px; margin-top: 13px; height: 6.7vh;">{{data.desc}}</p>
+	            			</div>
+		            	</div>
+		            	<div class="inner-vote-container">
+			            	<div class="inner-vote">
+			            		<a ng-click="vote_upImage(data)"><img style="width: 5vw; margin-left: 2vw;" src="img/vote_up1.png"/></a>
+			            		<p style="font-size: 20px; color: black; margin-left: 2.5vw;">{{vote}}</p>
+			            		<a ng-click="vote_downImage(data)"><img style="width: 5vw; margin-left: 2vw;" src="img/vote_down1.png"/></a>
+			            	</div>
+		            	</div>		            	
+	            	</div>
+	            </ion-item>
+	        </ion-list>
+	    </ion-scroll>    
+        <!-- <button class="button button-assertive button-block buttonColor" ng-click="parse_view()">parse view</button> -->
+    </ion-content>
+</ion-view>

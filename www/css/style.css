@@ -1,0 +1,119 @@
+/* Empty. Add your own CSS if you like */
+
+.title{
+    font-size: 45px;
+    margin-top: 35px;
+    margin-left: 33vw;
+    font-family: cursive;
+}
+
+.button{
+    min-height: 20px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 0px;
+}
+
+.top-left-button{
+	border-color: black;
+	/*border-radius: 0px;*/
+	border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+.top-right-button{
+	border-color: black;
+	/*border-radius: 0px;*/
+	border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+
+.row{
+	padding-right: 30vw;
+	padding-left: 27vw;
+	padding-top: 10px;
+}
+
+.col{
+	padding: 0px; 
+}
+
+.list{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 10px;
+	/*padding-bottom: 10px;*/
+}
+
+.item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.inner-image{
+	/*width: 60vw;*/
+	width: 30vw;
+}
+
+.item {
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.item .image-container {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item .inner-text .inner-text-container{
+	display: flex;
+	flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-text{
+	width: 55vw;
+	margin-left: 7px;
+}
+
+.item .image-container .inner-vote-container {
+	display: flex;
+	flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-vote{
+	width: 50px;
+	margin-left: 17px;
+}
+
+.detail-title{
+	font-size: 25px;
+    margin-top: 60px;
+    margin-left: 27vw;
+}
+
+.detail-login{
+    margin-top: 50px;
+    font-size: 25px;
+    border-color: black;
+    border-width: 1px;
+    width: 50vw;
+    margin-left: 25vw;
+    background-color: white;
+}
